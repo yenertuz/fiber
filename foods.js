@@ -1,4 +1,4 @@
-[
+const foods = [
   {
     "name": "Flour, barley bran",
     "serving": "1 cup",
