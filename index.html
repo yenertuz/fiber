@@ -6,9 +6,12 @@
 <script src="./foods.js"></script>
 <script>
 const body = document.querySelector("body");
-body.innerHTML += `<table class="w3-table-all"><tr><th>Name</th><th>Insoluble fiber</th></tr></table>`;
+body.innerHTML += `<table class="w3-table-all" style="display:none"><tr><th>Name</th><th>Insoluble fiber</th></tr></table>`;
 const table = body.querySelector("table"); 
 foods.forEach(food => {
-  table.innerHTML += `<tr><td>${food.name}</td><td>${food.insolubleFiber}</td></tr>`;
+  if (food.name.trim() && food.insolubleFiber.trim() {
+      table.innerHTML += `<tr><td>${food.name}</td><td>${food.insolubleFiber}</td></tr>`;
+  }
 });
+table.style="";
 </script>
